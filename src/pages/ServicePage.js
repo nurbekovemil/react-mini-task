@@ -30,7 +30,7 @@ export default function ServicePage() {
          <Row className="mt-1">
             {
                services.length > 0 ? services.map(service => (
-                  <Col xs={3} md={3} sm={12} key={service.id}>
+                  <Col xs={12} sm={12} md={3} key={service.id}>
                      <Card className="mt-2">
                         <Card.Img variant="top" src={service.logo}/>
                         <Card.Body>
