@@ -20,7 +20,9 @@ export default function HomePage() {
                         <Card.Img variant="top" src={categ.logo}/>
                         <Card.Body className="p-xs-0  p-sm-2 p-md-3 bp">
                            <Card.Link as={Link} to={`/${categ.id}`}>
-                              <Card.Title className="cuntom">{categ.title}</Card.Title>
+                              <Card.Title className="cuntom mb-1">
+                              {categ.title.length > 25 ? `${categ.title.slice(0,25)}... ` : categ.title}
+                              </Card.Title>
                            </Card.Link>
                         </Card.Body>
                      </Card>
