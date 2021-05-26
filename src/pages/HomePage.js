@@ -15,12 +15,12 @@ export default function HomePage() {
          <Row className="mt-1">
             {
                data.length > 0 ? data.map(categ => (
-                  <Col  xs={12} sm={12} md={3} key={categ.id}>
+                  <Col xs={3} sm={3} md={3} key={categ.id} className="pl-xs-0 pl-sm-1 pl-md-2">
                      <Card className="mt-2">
                         <Card.Img variant="top" src={categ.logo}/>
-                        <Card.Body>
+                        <Card.Body className="p-xs-0  p-sm-2 p-md-3">
                            <Card.Link as={Link} to={`/${categ.id}`}>
-                              <Card.Title>{categ.title}</Card.Title>
+                              <Card.Title className="cuntom">{categ.title}</Card.Title>
                            </Card.Link>
                         </Card.Body>
                      </Card>
